@@ -1,14 +1,22 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { AuthProvider } from "../context/AuthContext"; // ✅ Import करें
+import Navbar from "../Components/Navbar";
+import Home from "../Pages/Home";
+import Login from "../Pages/Login";
+import Booking from "../Pages/Booking";
+import Register from "../Pages/Register";
 
-import {Routes,Route} from 'react-router-dom'
-import Home from '../Pages/Home'
-import Booking from '../Pages/Booking'
-import Login from '../Pages/Login'
-export default function AllRoutes(){
+export default function App() {
     return (
-        <Routes>
-            <Route path='/' element={<Home/>}/>
-            <Route path='/Booking' element={<Booking/>}/>
-            <Route path='/Login' element={<Login/>}/>
-        </Routes>
-    )
+        <AuthProvider>  {/* ✅ Context Provider से Wrap करें */}
+           <Navbar/>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/Booking" element={<Booking />} />
+                    <Route path="/Register" element={<Register />} />
+
+                </Routes>
+        </AuthProvider>
+    );
 }
