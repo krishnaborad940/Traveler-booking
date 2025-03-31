@@ -42,11 +42,11 @@ export default function Home() {
             </section>
 
             {/* 🔹 Logout Button (अगर User Login है तो ही दिखाएँगे) */}
-            <div className="container">
+            {/* <div className="container">
                 {loggedInUser ? (
                     <button onClick={logout} style={{ float: "right", margin: "10px" }}>Logout</button>
                 ) : null}
-            </div>
+            </div> */}
 
             {/* Hotels */}
             <section className="container">

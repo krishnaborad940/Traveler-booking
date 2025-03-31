@@ -17,20 +17,20 @@ export default function Navbar() {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            background: "#333",
+            background: "linear-gradient(90deg, #6a11cb, #2575fc)",
             padding: "10px 20px",
             color: "white"
         }}>
             <h2>My App</h2>
 
-            <div>
-                <Link to="/" style={{ color: "white", margin: "0 10px" }}>Home</Link>
-                <Link to="/Booking" style={{ color: "white", margin: "0 10px" }}>Booking</Link>
-                <Link to="/Register" style={{ color: "white", margin: "0 10px" }}>Register</Link>
+            <div style={{marginRight:"100px"}}>
+                <Link to="/" style={{ color: "white", margin: "0 50px",textDecoration:"none " }}>Home</Link>
+                <Link to="/Booking" style={{ color: "white", margin: "0 50px",textDecoration:"none " }}>Booking</Link>
+                <Link to="/Register" style={{ color: "white", margin: "0 50px" ,textDecoration:"none "}}>Register</Link>
 
                 {user ? (
                     <button onClick={logout} style={{
-                        marginLeft: "10px",
+                        marginLeft: "50px",
                         background: "red",
                         color: "white",
                         width:"70px"

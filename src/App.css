@@ -4,6 +4,10 @@ body{
   padding: 0;
   box-sizing: border-box;}
 /* Navbar Container */
+nav {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -218,4 +222,5 @@ h1 {
     font-size: 1.5rem;
   }
 }
+/* header */
 
