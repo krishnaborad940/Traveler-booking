@@ -1,5 +1,7 @@
 import { useEffect, useState, useContext } from "react";
 import { AuthContext } from "../context/AuthContext";  // ✅ Import AuthContext
+import { Link } from "react-router-dom";
+import allDetails from "./allDetails";
 
 export default function Home() {
     const { user: loggedInUser, logout } = useContext(AuthContext);  // ✅ Context से User और Logout Function लें
@@ -64,6 +66,7 @@ export default function Home() {
                                 <p>{hotel.Price}</p>
                                 <p>{hotel.Rating}⭐</p>
                                 <p>{hotel.status}</p>
+                                <Link to={`/allDetails/hotel/${hotel.id}`}>view detils</Link>
                             </div>
                         );
                     })}

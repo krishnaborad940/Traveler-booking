@@ -137,3 +137,85 @@ h1 {
     text-align: left;
     margin-bottom: 10px;
 }
+
+/* booking */
+/* BookingForm.css */
+
+/* Overall Form Container */
+.booking-form {
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Title */
+.booking-form h2 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Form Group Styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Label Styling */
+.form-group label {
+  display: block;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Input and Select Styling */
+.form-group input,
+.form-group select,
+.form-group button {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Input/Select Focus State */
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Submit Button Styling */
+.form-group button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .booking-form {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .booking-form h2 {
+    font-size: 1.5rem;
+  }
+}
+

@@ -15,7 +15,7 @@ export default function App() {
                     <Route path="/login" element={<Login />} />
                     <Route path="/Booking" element={<Booking />} />
                     <Route path="/Register" element={<Register />} />
-
+                    <Route path="/allDetails/:type/:id" element={<allDetails />} />
                 </Routes>
         </AuthProvider>
     );
